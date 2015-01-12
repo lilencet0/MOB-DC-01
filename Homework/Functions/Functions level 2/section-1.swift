@@ -8,8 +8,21 @@ import UIKit
 // ex: modifyVar(&passedParemeter)
 // Write a function changeName that prints out "Name changed to 'paremeter'" and that changes the value of the variable passed to it
 
+var name1 = "Peaches"
+var name2 = "Cream"
+
+func changeName(inout name1: String, inout name2: String) {
+    let oldName1 = name1
+    name1 = name2
+    name2 = oldName1
+    println("Name changed to \(oldName1)")
+}
+
+changeName(&name1, &name2)
+
+
 // Write a function to find the sum of any two multiples below any max value (make the default 2000)
-// call sould be something like this: addMultiples(mult1: 3, mult2: 5)
+// call sould be something like this: addMultiples(mult1: 3, mult2: 5). answer should be 233,168
 
 // Change calculator: write a function that takes a dollar amount and returns the amount of pennies, nickles, dimes, and quarters needed to return as change (if under $1)
 

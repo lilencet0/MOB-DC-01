@@ -144,6 +144,8 @@ billAndTip(10, 00.30)
 billAndTip(55, 0)
 
 
+
+
 // TODO: Write a function that takes in a string and returns a string that is the reverse of the input. Append two strings using the + operator.
 
 func reverseString(strng: String) -> String {
@@ -182,10 +184,12 @@ palindrome("madam")
 
 
 // BONUS TODO: Write a function that takes in two strings and returns a boolean indicating whether the two strings
-=======
+
 // BONUS TODO: Write a function that takes in two strings and returns a boolean indicating whether the two strings are equal
 
 
 
 
 // BONUS TODO: Write a function that accepts two parameters, a string and a function that accepts a string and returns a string. Print the result of passing the string into the function 10 times.
+
+
