@@ -130,7 +130,7 @@ for i in 1...100 {
 }
 
 println(sum)
-//var temoString = "10"
+//var tempString = "10"
 //tempString.toInt()!
 
 
