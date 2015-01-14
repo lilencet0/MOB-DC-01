@@ -14,9 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var textInput: UITextField!
     @IBOutlet weak var textLabel: UILabel!
     @IBAction func helloBut(sender: AnyObject) {
-//        textLabel.text = "hello \(textInput.text)"
-        let textLabel = Int(fibN(n))
-        
+        textLabel.text = "hello \(textInput.text)"
+    }
     
     
     /*
@@ -24,8 +23,11 @@ class ViewController: UIViewController {
     */
     
     
+
+    @IBAction func fibonacciButt(sender: AnyObject) {
+
     
-    func fibN(n: Int) -> Int {
+        func fibN(n: Int) -> Int {
         var fibNum = n, current = 1, next = 2, result = 0
         for index in 0..<fibNum {
             
@@ -38,10 +40,21 @@ class ViewController: UIViewController {
         
         return result
     }
+        
+}
+
+
+/* Questions:
     
-    
-    }
-    
+    Does the fibonacci func have to be inside the button {} to change the action for the secont time?
+    Does the previous setting of the buton have to be deleted/hidden?
+
+
+
+*/
+
+        
+
     
     
     
@@ -51,5 +64,5 @@ class ViewController: UIViewController {
     */
 
 
-}
+
 

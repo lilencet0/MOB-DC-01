@@ -1,7 +1,7 @@
 // Playground - noun: a place where people can play
 
 import UIKit
-//Defining a class requires we name the class with a capital letter
+//Defining a class requires a capital letter. Class files should have the same name as the class.
 class Animal {
     
     var numberOfLegs: Int
