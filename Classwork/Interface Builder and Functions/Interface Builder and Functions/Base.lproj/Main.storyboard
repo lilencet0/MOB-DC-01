@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xe0-07-a98">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Put your name here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xe0-07-a98">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="131" width="368" height="30"/>
                                 </variation>
@@ -30,20 +30,56 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="380" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="244" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="fibonacciButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pPd-VI-ree"/>
-                                    <action selector="helloBut:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="G0Y-9m-fEu"/>
+                                    <action selector="helloButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OiY-U8-oGc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si6-Gm-jur">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Si6-Gm-jur">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="234" width="112" height="21"/>
+                                    <rect key="frame" x="144" y="208" width="112" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="total" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u97-I8-d6b">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="304" width="182" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akv-ZQ-nD2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="179" y="399" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="fibButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jT0-Cl-9pw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tip" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uC5-yl-S4O">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="202" y="304" width="182" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfG-5n-XQs">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="113" y="362" width="175" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -53,6 +89,10 @@
                                 <exclude reference="xe0-07-a98"/>
                                 <exclude reference="nOa-st-o3w"/>
                                 <exclude reference="Si6-Gm-jur"/>
+                                <exclude reference="u97-I8-d6b"/>
+                                <exclude reference="akv-ZQ-nD2"/>
+                                <exclude reference="uC5-yl-S4O"/>
+                                <exclude reference="zfG-5n-XQs"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -60,10 +100,17 @@
                                 <include reference="xe0-07-a98"/>
                                 <include reference="nOa-st-o3w"/>
                                 <include reference="Si6-Gm-jur"/>
+                                <include reference="u97-I8-d6b"/>
+                                <include reference="akv-ZQ-nD2"/>
+                                <include reference="uC5-yl-S4O"/>
+                                <include reference="zfG-5n-XQs"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="billField" destination="uC5-yl-S4O" id="QMy-ts-ro7"/>
+                        <outlet property="fibLabel" destination="zfG-5n-XQs" id="7c1-XE-l79"/>
+                        <outlet property="fibText" destination="u97-I8-d6b" id="CzN-mm-Edm"/>
                         <outlet property="textInput" destination="xe0-07-a98" id="UHN-54-QTM"/>
                         <outlet property="textLabel" destination="Si6-Gm-jur" id="rd4-Du-aBg"/>
                     </connections>

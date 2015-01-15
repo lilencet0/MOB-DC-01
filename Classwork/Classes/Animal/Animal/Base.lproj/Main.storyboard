@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Animal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9c-ak-Gja">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="cWB-Ys-ycp"/>
+                                </constraints>
+                                <state key="normal" title="CAT">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cWB-Ys-ycp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cWB-Ys-ycp"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="catButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="irf-Q0-Wmb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aM8-ZR-yfK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="3kZ-10-IQH"/>
+                                </constraints>
+                                <state key="normal" title="DOG">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3kZ-10-IQH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3kZ-10-IQH"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="doggyButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YSr-Pd-woR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Make your animal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="72q-R1-KeL">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M9c-ak-Gja" firstAttribute="top" secondItem="72q-R1-KeL" secondAttribute="bottom" constant="93" id="0qn-bH-GCK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aM8-ZR-yfK" secondAttribute="trailing" constant="74" id="29G-gL-kjp"/>
+                            <constraint firstItem="aM8-ZR-yfK" firstAttribute="baseline" secondItem="M9c-ak-Gja" secondAttribute="baseline" id="3ir-aD-hLy"/>
+                            <constraint firstItem="72q-R1-KeL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="81" id="7UD-gw-xZX"/>
+                            <constraint firstItem="M9c-ak-Gja" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="81" id="PAv-Zb-vaW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="72q-R1-KeL" secondAttribute="trailing" constant="29" id="TgO-5k-tXZ">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="72q-R1-KeL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="Ury-rP-kUA">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="M9c-ak-Gja"/>
+                                <exclude reference="aM8-ZR-yfK"/>
+                                <exclude reference="72q-R1-KeL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7UD-gw-xZX"/>
+                                <exclude reference="TgO-5k-tXZ"/>
+                                <exclude reference="Ury-rP-kUA"/>
+                                <exclude reference="0qn-bH-GCK"/>
+                                <exclude reference="PAv-Zb-vaW"/>
+                                <exclude reference="29G-gL-kjp"/>
+                                <exclude reference="3ir-aD-hLy"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="M9c-ak-Gja"/>
+                                <include reference="aM8-ZR-yfK"/>
+                                <include reference="72q-R1-KeL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7UD-gw-xZX"/>
+                                <include reference="TgO-5k-tXZ"/>
+                                <include reference="Ury-rP-kUA"/>
+                                <include reference="0qn-bH-GCK"/>
+                                <include reference="PAv-Zb-vaW"/>
+                                <include reference="29G-gL-kjp"/>
+                                <include reference="3ir-aD-hLy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="animalLabel" destination="72q-R1-KeL" id="gNn-Y1-9xy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
