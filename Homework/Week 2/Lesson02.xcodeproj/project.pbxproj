@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		224DF8FF1A6F3F37003E46F6 /* youCan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DF8FE1A6F3F37003E46F6 /* youCan.swift */; };
 		224DF9011A6F3F68003E46F6 /* youCanTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DF9001A6F3F68003E46F6 /* youCanTwo.swift */; };
+		224DF9031A6F4F88003E46F6 /* fibonacciAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DF9021A6F4F88003E46F6 /* fibonacciAdder.swift */; };
 		5D06C6AD19D8D2710082F2DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D06C6AC19D8D2710082F2DE /* AppDelegate.swift */; };
 		5D06C6B219D8D2710082F2DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D06C6B019D8D2710082F2DE /* Main.storyboard */; };
 		5D06C6B419D8D2710082F2DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D06C6B319D8D2710082F2DE /* Images.xcassets */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		224DF8FE1A6F3F37003E46F6 /* youCan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = youCan.swift; sourceTree = "<group>"; };
 		224DF9001A6F3F68003E46F6 /* youCanTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = youCanTwo.swift; sourceTree = "<group>"; };
+		224DF9021A6F4F88003E46F6 /* fibonacciAdder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = fibonacciAdder.swift; path = Lesson02/fibonacciAdder.swift; sourceTree = "<group>"; };
 		5D06C6A719D8D2710082F2DE /* Lesson02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D06C6AB19D8D2710082F2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D06C6AC19D8D2710082F2DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		5D06C69E19D8D2710082F2DE = {
 			isa = PBXGroup;
 			children = (
+				224DF9021A6F4F88003E46F6 /* fibonacciAdder.swift */,
 				5D06C6A919D8D2710082F2DE /* Lesson02 */,
 				5D06C6BF19D8D2710082F2DE /* Lesson02Tests */,
 				5D06C6A819D8D2710082F2DE /* Products */,
@@ -236,6 +239,7 @@
 				5D06C6CF19D8D7350082F2DE /* SecondViewController.swift in Sources */,
 				5D06C6CD19D8D72E0082F2DE /* FirstViewController.swift in Sources */,
 				5D06C6D119D8D73C0082F2DE /* ThirdViewController.swift in Sources */,
+				224DF9031A6F4F88003E46F6 /* fibonacciAdder.swift in Sources */,
 				224DF8FF1A6F3F37003E46F6 /* youCan.swift in Sources */,
 				5D06C6AD19D8D2710082F2DE /* AppDelegate.swift in Sources */,
 			);
