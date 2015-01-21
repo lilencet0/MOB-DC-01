@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBAction func catButt(sender: AnyObject) {
         
         var cat = Animal()
-        //cat.anme = animalLabel.text
+        //cat.name = animalLabel.text
         //cat.species = "Cat"
         cat.name = "Suzi"
         cat.species = "Cat"
